@@ -688,6 +688,15 @@
             </div>
         </div>
     </section>
+<audio id="sound" src="sound.mp3" autoplay muted loop></audio>
+
+<script>
+document.addEventListener('click', function () {
+  const audio = document.getElementById('sound');
+  audio.muted = false; // فك الكتم بعد أول تفاعل
+  audio.play();
+}, { once: true });
+</script>
 
     <!-- الفوتر -->
     <footer>
